@@ -28,8 +28,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 17px;
+  margin-bottom: 8.5px;
 }
 
 h1 small,
@@ -47,8 +47,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
 }
 
 h4 small,
@@ -64,49 +64,49 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 31px;
 }
 
 h2, .h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h4, .h4 {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 h5, .h5 {
-  font-size: 14px;
-}
-
-h6, .h6 {
   font-size: 12px;
 }
 
+h6, .h6 {
+  font-size: 11px;
+}
+
 p {
-  margin: 0 0 10px;
+  margin: 0 0 8.5px;
 }
 
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 17px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 1.4;
 }
 
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 
 small,
 .small {
-  font-size: 85%;
+  font-size: 91%;
 }
 
 mark,
@@ -246,15 +246,15 @@ a.bg-danger:focus {
 }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 7.5px;
+  margin: 34px 0 17px;
   border-bottom: 1px solid #eeeeee;
 }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8.5px;
 }
 
 ul ul,
@@ -283,7 +283,7 @@ ol ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 dt,
@@ -320,9 +320,9 @@ abbr[data-original-title] {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 8.5px 17px;
+  margin: 0 0 17px;
+  font-size: 15px;
   border-left: 5px solid #eeeeee;
 }
 
@@ -375,9 +375,16 @@ blockquote.pull-right .small:after {
 }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-style: normal;
   line-height: 1.42857;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
 * {
@@ -395,8 +402,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 12px;
   line-height: 1.42857;
   color: #333333;
   background-color: #fff;
@@ -413,13 +420,13 @@ textarea {
 
 a {
   color: #24b5e1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #1ca6cf;
+  text-decoration: none;
 }
 
 a:focus {
@@ -449,8 +456,8 @@ img {
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 17px;
+  margin-bottom: 17px;
   border: 0;
   border-top: 1px solid #000;
 }
@@ -697,6 +704,78 @@ th {
   padding: 0;
 }
 
+.phone {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.phone__icon {
+  color: #24b5e1;
+  font-size: 28px;
+  display: block;
+  float: left;
+}
+
+.phone__description {
+  display: block;
+  float: left;
+  margin: 5px 0;
+}
+
+.navbar {
+  padding: 0;
+  display: table;
+  width: 980px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  color: #383838;
+}
+
+.navbar__holder {
+  background-color: #f2f2f2;
+}
+
+.navbar__item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+}
+
+.navbar__item:first-child,
+.navbar__item:last-child {
+  width: 1%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.navbar__item:last-child {
+  text-align: right;
+}
+
+.navbar__item:first-child .navbar__link {
+  padding-left: 0;
+}
+
+.navbar__item:last-child .navbar__link {
+  padding-right: 0;
+}
+
+.navbar__link {
+  height: 100%;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #383838;
+}
+
+.navbar__link:hover {
+  color: #525252;
+  text-decoration: underline;
+}
+
 .w-search {
   border: 1px solid;
   border-radius: 3px;
@@ -737,32 +816,6 @@ th {
 .icon__search {
   font-size: 13px;
   fill: #24b5e1;
-}
-
-.w-link {
-  color: #24b5e1;
-  text-decoration: underline;
-}
-
-.w-link:hover {
-  text-decoration: none;
-  color: #24b5e1;
-}
-
-.w-link__active {
-  text-decoration: none;
-}
-
-.w-link_sidebar {
-  font-size: 14px;
-}
-
-.w-link_main {
-  font-size: 12px;
-}
-
-.w-link_table {
-  font-size: 11px;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,16 @@
+.phone {
+	font-size: 17px;
+	font-family: $font-family-sans-serif;
+	overflow: hidden;
+	&__icon {
+		color: $link-color;
+		font-size: 28px;
+		display: block;
+		float: left;
+	}
+	&__description {
+		display: block;
+		float: left;
+		margin: 5px 0;
+	}
+}

@@ -1,0 +1,51 @@
+$navbar-bg: #f2f2f2;
+$navbar-color: #383838;
+$page-width: 980px;
+.navbar {
+	padding: 0;
+	display: table;
+	width: $page-width;
+	margin: 0 auto;
+	background-color: $navbar-bg;
+	color: $navbar-color;
+	&__holder {
+		background-color: $navbar-bg;
+	}
+	&__item {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		height: 100%;
+		&:first-child, 
+		&:last-child {
+			width: 1%;
+			text-align: left;
+			white-space: nowrap;
+		}
+		&:last-child {
+			text-align: right;
+		}
+		&:first-child {
+			.navbar__link {
+				padding-left: 0;
+			}
+		}
+		&:last-child {
+			.navbar__link {
+				padding-right: 0;
+			}
+		}
+	}
+	&__link {
+		height: 100%;
+		display: block;
+		padding: 5px 20px;
+		text-decoration: none;
+		background-color: $navbar-bg;
+		color: $navbar-color;
+		&:hover {
+			color: lighten($navbar-color, 10%);
+			text-decoration: underline;
+		}
+	}
+}
