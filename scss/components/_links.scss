@@ -1,0 +1,20 @@
+.w-link {
+	color: $link-color;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+		color: $link-color;
+	}
+	&__active {
+		text-decoration: none;
+	}
+	&_sidebar {
+		font-size: $sidebar-link-size;
+	}
+	&_main {
+		font-size: $main-link-size;
+	}
+	&_table {
+		font-size: $table-link-size;
+	}
+}
