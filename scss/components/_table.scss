@@ -1,0 +1,22 @@
+.w-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	tr {
+		height: $table-tr-height;
+		&:nth-child(even) {
+  		background: $table-even-tr-bg-color;
+		}
+	}
+	th {
+		color: $table-th-color; 
+	}
+	td {
+		&:nth-child(2) {
+  		color: $link-color;
+		}
+	}
+	caption {
+		text-align: left;
+	}
+}

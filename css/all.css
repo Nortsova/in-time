@@ -863,6 +863,10 @@ th {
   cursor: pointer;
 }
 
+.w-search-button:focus {
+  outline: none;
+}
+
 .icon {
   display: inline-block;
   width: 1em;

@@ -1,0 +1,14 @@
+@mixin button-variant($color, $background) {
+  color: $color;
+  background-color: $background;
+  text-decoration: none;
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+      }
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+  }
+}
