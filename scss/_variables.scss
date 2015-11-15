@@ -32,7 +32,6 @@ $link-hover-color:      darken($link-color, 5%) !default;
 //** Link hover decoration.
 $link-hover-decoration: none !default;
 
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -156,5 +155,16 @@ $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 // == custom search-form settings
-$seacrh-form-border-color: 					#c8c8c8;
+$seacrh-form-border-color:		#c8c8c8;
+
+//** Buttons color
+$button-news-color:				#000;
+$button-news-bg-color:			#e9e9e9;
+$button-form-color:				#fff;
+$button-form-bg-color:			#24b5e1;
+
+//** Table  parameters & color
+$table-even-tr-bg-color:		#f8f8f8;
+$table-th-color: 				#7d7d7d;
+$table-tr-height:				35px;
 

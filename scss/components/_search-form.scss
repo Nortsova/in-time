@@ -25,6 +25,9 @@
  	&:hover{
  		cursor: pointer;
  	}
+ 	&:focus{
+ 		outline: none;
+ 	}
 }
 //== use svg icon
 .icon {
