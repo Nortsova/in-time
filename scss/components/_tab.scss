@@ -1,0 +1,42 @@
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 14px;
+     li {
+    float: left;
+    margin-right: 6px;
+        input {
+        display: none;
+            &:checked ~ .tab-button {
+                background-color: $tab-active-button-bg-color;
+                color: $tab-active-button-color;
+            }
+            &:checked ~ .tab-content {
+                display: block;
+            }
+        }
+    }
+    @include clearfix;
+}
+.tab-button {
+    display: inline-block;
+    color: $tab-button-color;
+    background-color: $tab-button-bg-color;
+    border-radius: 3px;
+    padding: 12px 17px;
+    cursor: pointer;
+}
+.tab-content {
+    display: none;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    padding-top: 17px;
+    border-top: 1px solid;
+    border-color: $tab-content-border-color;
+    width: 100%;
+    line-height: 1.5;
+}

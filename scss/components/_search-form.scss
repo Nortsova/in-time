@@ -4,30 +4,32 @@
 	border-radius: 3px;
 	border-color: $seacrh-form-border-color;
 	width: 228px;
-	height: 22px;
-}
-.w-search-input {
+	height: 25px;
+	&__input {
 	display: inline-block;
+	padding: 0;
 	background-color: inherit;
     border: none; 
     outline: none;
     -webkit-appearance: none; 
     width: 200px; 
     vertical-align: middle;
-}
-.w-search-button {
+    line-height: 23px;
+	}
+	&__button {
 	display: inline-block;
 	padding: 0;
 	border: none;
  	background: inherit;
  	vertical-align: middle;
  	line-height: 13px;
- 	&:hover{
- 		cursor: pointer;
- 	}
- 	&:focus{
- 		outline: none;
- 	}
+	 	&:hover{
+	 		cursor: pointer;
+	 	}
+	 	&:focus{
+	 		outline: none;
+	 	}	
+	}
 }
 //== use svg icon
 .icon {

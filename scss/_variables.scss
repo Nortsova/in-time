@@ -15,7 +15,6 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -154,9 +153,9 @@ $state-danger-text:              #a94442 !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
-// == custom search-form settings
+// == search-form/send-form color
 $seacrh-form-border-color:		#c8c8c8;
-
+$send-form-border-color:		$seacrh-form-border-color;		
 //** Buttons color
 $button-news-color:				#000;
 $button-news-bg-color:			#e9e9e9;
@@ -167,4 +166,13 @@ $button-form-bg-color:			#24b5e1;
 $table-even-tr-bg-color:		#f8f8f8;
 $table-th-color: 				#7d7d7d;
 $table-tr-height:				35px;
+
+//* Tabs parameters & color
+$tab-button-bg-color:			#e9e9e9;
+$tab-active-button-bg-color:	#24b5e1;
+$tab-button-color:				#000;
+$tab-active-button-color:		#fff;
+$tab-content-border-color:		#24b5e1;
+
+
 
