@@ -1,0 +1,18 @@
+
+.w-send-form {
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: $send-form-border-color;
+	width: 228px;
+	height: 25px;
+	&__input {
+	display: inline-block;
+	background-color: inherit; 
+	border: none;
+    outline: none;
+    -webkit-appearance: none; 
+    width: 228px; 
+    vertical-align: middle;
+	}
+}
+
