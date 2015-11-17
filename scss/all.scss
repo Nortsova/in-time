@@ -8,6 +8,7 @@
 
 @import "components/scaffolding";
 @import "components/normalize";
+@import "components/grid";
 
 // header components 
 @import "components/phone";
@@ -16,25 +17,57 @@
 // content components 
 @import "components/breadcrumbs";
 @import "components/headings";
-<<<<<<< HEAD
 @import "components/table";
 @import "components/ul";
 @import "components/gallery-list";
 @import "components/img-holder";
-=======
->>>>>>> 8ce5a18a529ae94ec3af20b2ef4c6896f75a09b8
 
 // sidebar components
 @import "components/search-form";
 @import "components/send-form";
 @import "components/buttons";
-
-<<<<<<< HEAD
 //footer 
 @import "components/social-icons";
 
-=======
 // main components
 @import "components/table";
 @import "components/tab";
->>>>>>> 8ce5a18a529ae94ec3af20b2ef4c6896f75a09b8
+
+
+.header {
+	padding: 30px 0;
+}
+
+.block {
+	&:after {
+		content: "";
+	}
+	&-fill-height {
+		height: 100vh;
+		display: table;
+		width: 100%;
+	}
+	&-header {
+		display: table-header-group;
+		height: 1%;
+	}
+	&-body {
+		display: table-row-group;
+		height: 100%;
+	}
+	&-footer {
+		display: table-footer-group;
+		height: 1%;
+	}
+	&-inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.article-block {
+	padding: 10px 0;
+}
+
+.table-block {
+	min-height: 200px;
+}

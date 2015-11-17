@@ -12,4 +12,10 @@
   &__form {
   @include button-variant ($button-form-color, $button-form-bg-color);
   }
+  &--right {
+    float: right;
+  }
+}
+.button-holder {
+  overflow: hidden;
 }

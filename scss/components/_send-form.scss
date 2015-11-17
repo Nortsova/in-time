@@ -2,17 +2,17 @@
 .w-send-form {
 	border: 1px solid;
 	border-radius: 3px;
-	border-color: $send-form-border-color;
-	width: 228px;
-	height: 25px;
+	// border-color: $send-form-border-color;
+	margin: 10px 0;
 	&__input {
-	display: inline-block;
-	background-color: inherit; 
-	border: none;
-    outline: none;
-    -webkit-appearance: none; 
-    width: 228px; 
-    vertical-align: middle;
+		padding: 6px 5px;
+		width: 100%;
+		display: inline-block;
+		background-color: inherit; 
+		border: none;
+	    outline: none;
+	    -webkit-appearance: none; 
+	    vertical-align: middle;
 	}
 }
 

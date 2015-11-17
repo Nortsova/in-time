@@ -25,12 +25,12 @@ $navbar-color: #383838;
 		}
 		&:first-child {
 			.navbar__link {
-				padding-left: 0;
+				padding-left: 15px;
 			}
 		}
 		&:last-child {
 			.navbar__link {
-				padding-right: 0;
+				padding-right: 15px;
 			}
 		}
 	}
@@ -41,6 +41,7 @@ $navbar-color: #383838;
 		text-decoration: none;
 		background-color: $navbar-bg;
 		color: $navbar-color;
+		font-size: 1.25em;
 		&:hover {
 			color: lighten($navbar-color, 10%);
 			text-decoration: underline;
