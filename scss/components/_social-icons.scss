@@ -1,0 +1,14 @@
+.social-icons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	&__item {
+		float: left;
+		font-size: 30px;
+		padding: 0 2px;
+	}
+	&__link {
+		color: $gray-lighter;
+	}
+}

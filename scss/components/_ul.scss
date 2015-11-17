@@ -1,0 +1,19 @@
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	&__item {
+		position: relative;
+		padding: $ul-item-padding;
+		&:before {
+			content: "";
+			display: block;
+			width: 17px;
+			height: 1px;
+			background-color: $gray-light;
+			position: absolute;
+			left: 0;
+			top: 50%;
+		}
+	}
+}

@@ -16,9 +16,15 @@
 // content components 
 @import "components/breadcrumbs";
 @import "components/headings";
+@import "components/table";
+@import "components/ul";
+@import "components/gallery-list";
+@import "components/img-holder";
+
 // sidebar components
 @import "components/search-form";
 @import "components/buttons";
 
-// main components
-@import "components/table";
+//footer 
+@import "components/social-icons";
+
