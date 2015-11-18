@@ -179,8 +179,28 @@ $tab-button-color:				#000;
 $tab-active-button-color:		#fff;
 $tab-content-border-color:		#24b5e1;
 
+//=== Shared nav styles
+$nav-link-padding:                          	10px 15px !default;
+$nav-link-hover-bg:                         	$gray-lighter !default;
 
+$nav-disabled-link-color:                   	$gray-light !default;
+$nav-disabled-link-hover-color:             	$gray-light !default;
 
+//== Tabs
+$nav-tabs-border-color:                     	#24b5e1 !default;
+$nav-tabs-link-bg:								#e9e9e9;
+$nav-tabs-link-color:							#000;
+
+$nav-tabs-link-hover-border-color:          	$gray-lighter !default;
+$nav-tabs-active-link-hover-bg:             	#24b5e1;
+$nav-tabs-active-link-hover-color:          	#fff;
+$nav-tabs-active-link-hover-border-color:   	#ddd !default;
+
+$nav-tabs-justified-link-border-color:			#ddd !default;
+$nav-tabs-justified-active-link-border-color:	$body-bg !default;
+
+$border-radius-base:        					3px !default;
+$cursor-disabled:                				not-allowed !default;
 
 
 //== Media queries breakpoints

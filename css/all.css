@@ -1832,30 +1832,11 @@ th {
 }
 
 .tabs {
-  list-style-type: none;
+  margin-bottom: 0;
   padding: 0;
-  margin: 0;
-  position: relative;
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.tabs li {
-  float: left;
-  margin-right: 6px;
-}
-
-.tabs li input {
-  display: none;
-}
-
-.tabs li input:checked ~ .tab-button {
-  background-color: #24b5e1;
-  color: #fff;
-}
-
-.tabs li input:checked ~ .tab-content {
-  display: block;
+  padding-bottom: 1px;
+  list-style: none;
+  border-bottom: 1px solid #24b5e1;
 }
 
 .tabs:before,
@@ -1868,25 +1849,54 @@ th {
   clear: both;
 }
 
-.tab-button {
-  display: inline-block;
-  color: #000;
-  background-color: #e9e9e9;
-  border-radius: 3px;
-  padding: 12px 17px;
-  cursor: pointer;
+.tabs > li {
+  position: relative;
+  display: block;
+  float: left;
 }
 
-.tab-content {
+.tabs > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-right: 6px;
+  line-height: 1.42857;
+  color: #000;
+  background-color: #e9e9e9;
+  border-radius: 3px 3px 0 0;
+  text-decoration: none;
+}
+
+.tabs > li > a:hover {
+  border-color: #b8b8b8 #b8b8b8 #24b5e1;
+  text-decoration: none;
+}
+
+.tabs > li.active > a,
+.tabs > li.active > a:hover,
+.tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #24b5e1;
+  cursor: default;
+  text-decoration: none;
+}
+
+.tab-content > .tab-pane {
   display: none;
-  position: absolute;
-  top: 39px;
-  left: 0;
-  padding-top: 17px;
-  border-top: 1px solid;
-  border-color: #24b5e1;
-  width: 100%;
-  line-height: 1.5;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  > li {
+    display: table-cell;
+    width: 1%;
+  }
+  > li > a {
+    margin-bottom: 0;
+  }
 }
 
 .header {
