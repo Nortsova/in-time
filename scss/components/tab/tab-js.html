@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabs</title>
+	<link rel="stylesheet" href="css/all.css">
+	<style type="text/css">
+	.table-block {
+		width: 700px;
+	}
+  	</style>
+</head>
+<body>
+<div class="table-block">
+	<ul id="tab" class="tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Активный таб</a></li>
+    <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Неактивный таб</a></li>
+    <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Неактивный таб</a></li>
+    <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Неактивный таб</a></li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab1">Тестовый текст в первом табе. Наручные женские часы не только необходимость знания времени, но и элемент имид
+		жа, предмет гордости, и украшение! Для женщин стало престижно иметь не одни часы, а несколько. Они ведь, несом
+		ненно, должны сочетаться с Вашим нарядом. Сплошная элегантность и роскошь, браслет, корпус инкрустированы стра
+		зами, застежка простая.</div>
+    <div role="tabpanel" class="tab-pane" id="tab2">Тестовый текст в первом табе. Наручные женские часы не только необходимость знания времени, но и элемент имид
+		жа, предмет гордости, и украшение! Для женщин стало престижно иметь не одни часы, а несколько. Они 
+		зами, застежка простая.</div>
+    <div role="tabpanel" class="tab-pane" id="tab3">Тестовый текст в первом табе. Наручные женские часы не только необходимость знания времени, но и элемент имид
+		жа, предмет гордости, и украшение! Для женщин стало престижно иметь не одни часы, а несколько. Они ведь, несом
+		ненно, должны сочетаться с Вашим нарядом. Сплошная элегантность и роскошь, браслет, корпус инкрустированы стра
+		зами, застежка простая.Тестовый текст в первом табе. Наручные женские часы не только необходимость знания времени, но и элемент имид
+		жа, предмет гордости, и украшение! Для женщин стало престижно иметь не одни часы, а несколько. Они ведь, несом
+		ненно, должны сочетаться с Вашим нарядом. Сплошная элегантность и роскошь, браслет, корпус инкрустированы стра
+		зами, застежка простая.</div>
+    <div role="tabpanel" class="tab-pane" id="tab4">...</div>
+  </div>
+</div>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/tab.js"></script>
+<script>
+$('#tab a[href="#tab1"], a[href="#tab2"], a[href="#tab3"], a[href="#tab4"]' ).click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</body>
+</html>
