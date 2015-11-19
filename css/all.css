@@ -89,6 +89,7 @@ h6, .h6 {
 
 p {
   margin: 8.5px 0;
+  font-size: 1.67em;
 }
 
 .lead {
@@ -1545,12 +1546,12 @@ th {
 .breadcrumbs__item {
   float: left;
   color: #7c7c7c;
-  padding: 0 5px 0 15px;
+  padding: 0 5px 0 10px;
   position: relative;
 }
 
 .breadcrumbs__item:after {
-  content: ">";
+  content: "/";
   display: block;
   position: absolute;
   left: 100%;
@@ -1849,13 +1850,13 @@ th {
   clear: both;
 }
 
-.tabs > li {
+.tabs li {
   position: relative;
   display: block;
   float: left;
 }
 
-.tabs > li > a {
+.tabs li a {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -1867,14 +1868,14 @@ th {
   text-decoration: none;
 }
 
-.tabs > li > a:hover {
+.tabs li a:hover {
   border-color: #b8b8b8 #b8b8b8 #24b5e1;
   text-decoration: none;
 }
 
-.tabs > li.active > a,
-.tabs > li.active > a:hover,
-.tabs > li.active > a:focus {
+.tabs li.active > a,
+.tabs li.active > a:hover,
+.tabs li.active > a:focus {
   color: #fff;
   background-color: #24b5e1;
   cursor: default;

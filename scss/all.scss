@@ -4,35 +4,34 @@
 
 @import "components/fonts";
 @import "components/type";
-@import "components/icons";
+@import "components/icons/icons";
 
 @import "components/scaffolding";
 @import "components/normalize";
 @import "components/grid";
 
 // header components 
-@import "components/phone";
-@import "components/navbar";
+@import "components/phone/phone";
+@import "components/navbar/navbar";
 
 // content components 
-@import "components/breadcrumbs";
-@import "components/headings";
-@import "components/table";
-@import "components/ul";
-@import "components/gallery-list";
+@import "components/breadcrumbs/breadcrumbs";
+@import "components/heading/headings";
+@import "components/table/table";
+@import "components/lists/ul";
+@import "components/lists/gallery-list";
 @import "components/img-holder";
 
 // sidebar components
-@import "components/search-form";
-@import "components/send-form";
-@import "components/buttons";
+@import "components/search_form/search-form";
+@import "components/send_form/send-form";
+@import "components/buttons/buttons";
 //footer 
-@import "components/social-icons";
+@import "components/lists/social-icons";
 
 // main components
-@import "components/table";
-// @import "components/tab";
-@import "components/tab-js";
+@import "components/table/table";
+@import "components/tab/tab-js";
 
 
 
