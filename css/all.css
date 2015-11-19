@@ -1731,6 +1731,19 @@ th {
   height: auto;
 }
 
+.img--left {
+  float: left;
+}
+
+.img--right {
+  float: right;
+}
+
+.img--small {
+  width: 200px;
+  height: auto;
+}
+
 .w-search {
   border: 1px solid;
   border-radius: 3px;
@@ -1963,6 +1976,7 @@ th {
 .hr--dashed {
   border: 0px none;
   border-top: 1px dashed #cacaca;
+  clear: both;
 }
 
 .header {
@@ -2007,10 +2021,7 @@ th {
 
 .article-block {
   padding: 10px 0;
-}
-
-.table-block {
-  min-height: 200px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=all.css.map */
