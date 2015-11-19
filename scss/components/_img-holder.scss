@@ -7,4 +7,14 @@
 		width: 100%;
 		height: auto;
 	}
+	&--left {
+		float: left;
+	}
+	&--right {
+		float: right;
+	}
+	&--small {
+		width: 200px;
+		height: auto;
+	}
 }

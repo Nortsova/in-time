@@ -2,49 +2,105 @@ $navbar-bg: #f2f2f2;
 $navbar-color: #383838;
 .navbar {
 	padding: 0;
-	display: table;
 	margin: 0 auto;
+	list-style: none;
 	background-color: $navbar-bg;
 	color: $navbar-color;
-	&__holder {
-		background-color: $navbar-bg;
-	}
+	
 	&__item {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-		height: 100%;
-		&:first-child, 
-		&:last-child {
-			width: 1%;
-			text-align: left;
-			white-space: nowrap;
-		}
-		&:last-child {
-			text-align: right;
-		}
-		&:first-child {
+		&.active {
 			.navbar__link {
-				padding-left: 15px;
-			}
-		}
-		&:last-child {
-			.navbar__link {
-				padding-right: 15px;
+				color: lighten($navbar-color, 10%);
+				background-color: darken($navbar-bg, 20%);
 			}
 		}
 	}
 	&__link {
-		height: 100%;
 		display: block;
 		padding: 5px 20px;
 		text-decoration: none;
 		background-color: $navbar-bg;
 		color: $navbar-color;
 		font-size: 1.25em;
-		&:hover {
+		&:hover, &:focus {
 			color: lighten($navbar-color, 10%);
-			text-decoration: underline;
+			background-color: darken($navbar-bg, 20%);
+		}
+	}
+}
+.collapse {
+	display: none;
+	&.in {
+		display: block;
+	}
+}
+
+.navbar-toggle {
+  position: relative;
+  margin-right: 10px;
+  padding: 9px 10px;
+  background-color: $navbar-bg;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  border-radius: 2px;
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $gray-darker;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+}
+@media (min-width: $screen-sm-min) {
+	.navbar-toggle {
+		display: none;
+	}
+	.collapse {
+		display: block;
+	}
+	.navbar {
+		display: table;
+		&__holder {
+			background-color: $navbar-bg;
+		}
+		&__item {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			height: 100%;
+			&:first-child, 
+			&:last-child {
+				width: 1%;
+				text-align: left;
+				white-space: nowrap;
+			}
+			&:last-child {
+				text-align: right;
+			}
+			&:first-child {
+				.navbar__link {
+					padding-left: 15px;
+				}
+			}
+			&:last-child {
+				.navbar__link {
+					padding-right: 15px;
+				}
+			}
+		}
+		&__link {
+			height: 100%;
 		}
 	}
 }
