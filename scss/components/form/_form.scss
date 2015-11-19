@@ -1,0 +1,19 @@
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+  &__center {
+	text-align: center;
+	}
+}
+
+.form-control {
+border: 1px solid;
+border-radius: 3px;
+border-color: $form-border-color;
+padding: 6px 5px;
+width: 100%;
+display: inline-block; 
+outline: none;
+-webkit-appearance: none; 
+vertical-align: middle;
+}
+

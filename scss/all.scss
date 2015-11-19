@@ -24,7 +24,8 @@
 
 // sidebar components
 @import "components/search_form/search-form";
-@import "components/send_form/send-form";
+@import "components/form/form";
+// @import "components/send_form/send-form";
 @import "components/buttons/buttons";
 //footer 
 @import "components/lists/social-icons";
@@ -71,4 +72,7 @@
 
 .table-block {
 	min-height: 200px;
+}
+.first-contact-row {
+	margin-bottom: 20px;
 }

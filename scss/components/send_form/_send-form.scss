@@ -1,18 +1,22 @@
 
 .w-send-form {
-	border: 1px solid;
-	border-radius: 3px;
-	// border-color: $send-form-border-color;
-	margin: 10px 0;
-	&__input {
-		padding: 6px 5px;
-		width: 100%;
-		display: inline-block;
-		background-color: inherit; 
-		border: none;
-	    outline: none;
-	    -webkit-appearance: none; 
-	    vertical-align: middle;
+border: 1px solid;
+border-radius: 3px;
+border-color: $send-form-border-color;
+padding: 6px 5px;
+width: 100%;
+display: inline-block; 
+outline: none;
+-webkit-appearance: none; 
+vertical-align: middle;
+	&__message {
+	border:none;
 	}
 }
-
+.message-block {
+	@extend .w-send-form;
+	min-height: 300px;
+}
+.form-control{
+	width: 100%;
+}

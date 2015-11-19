@@ -12,6 +12,9 @@
   &__form {
   @include button-variant ($button-form-color, $button-form-bg-color);
   }
+  &__send {
+  @include button-variant ($button-send-color, $button-send-bg-color);
+  }
   &--right {
     float: right;
   }

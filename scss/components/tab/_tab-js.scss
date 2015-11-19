@@ -44,12 +44,3 @@
     display: block;
   }
 }
-@media (min-width: $screen-sm-min) {
-    > li {
-      display: table-cell;
-      width: 1%;
-      > a {
-        margin-bottom: 0;
-      }
-    }
-  }

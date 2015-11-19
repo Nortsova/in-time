@@ -2,16 +2,18 @@
 	width: 100%;
 	border-collapse: collapse;
 	text-align: center;
-	tr {
-		height: $table-tr-height;
-		&:nth-child(even) {
-  		background: $table-even-tr-bg-color;
+	&__zebra {
+		tr {
+			&:nth-child(even) {
+	  		background: $table-even-tr-bg-color;
+			}
 		}
 	}
 	th {
 		color: $table-th-color; 
 	}
 	td {
+		padding: $table-td-padding 0;
 		&:nth-child(2) {
   		color: $link-color;
 		}
