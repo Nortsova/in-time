@@ -1,6 +1,6 @@
 .list {
 	margin: 0;
-	padding: 0;
+	padding: 0 40px 0 0;
 	list-style: none;
 	&__item {
 		position: relative;
@@ -15,5 +15,14 @@
 			left: 0;
 			top: 50%;
 		}
+	}
+	&__holder {
+		overflow: hidden;
+	}
+	&--left {
+		float: left;
+	}
+	&--right {
+		float: right;
 	}
 }
